@@ -4,23 +4,29 @@ import PhoneIcon from "./../img/phone-call.svg";
 import Pool1 from "./../img/pool1.jpg";
 import WaterTank from "./../img/water_tank.jpg";
 
+import Truck1 from "./../img/truck2.jpg";
+import Truck2 from "./../img/truck3.jpg";
+
 const Content = () => {
   const about_bluewater = (
-    <div class="bubble">
-      <h1>At Bluewater...</h1>
-      <p>
-        Here at Bluewater Deliveries we specialise in only the{" "}
-        <span class="bold">highest quality</span> and{" "}
-        <span class="bold">cleanest</span> drinking water available. We only use{" "}
-        <span class="bold">food grade stainless steel</span> teel tankers and
-        food grade hoses to deliver your water into your tanks as hygenically as
-        possible.
-      </p>
-      <p>
-        We also specialise in filling your new swimming pool. With our larger
-        carrying capacity we can fill your pool quicker and more economically.
-        Just contact us by phone or email for a quote.
-      </p>
+    <div>
+      <div class="bubble">
+        <img class="sub-image mobile-only" src={Truck1}></img>
+        <h1>At Bluewater...</h1>
+        <p>
+          Here at Bluewater Deliveries we specialise in only the{" "}
+          <span class="bold">highest quality</span> and{" "}
+          <span class="bold">cleanest</span> drinking water available. We only use{" "}
+          <span class="bold">food grade stainless steel</span> teel tankers and
+          food grade hoses to deliver your water into your tanks as hygenically as
+          possible.
+        </p>
+        <p>
+          We also specialise in filling your new swimming pool. With our larger
+          carrying capacity we can fill your pool quicker and more economically.
+          Just contact us by phone or email for a quote.
+        </p>
+      </div>
     </div>
   );
 
@@ -59,6 +65,7 @@ const Content = () => {
         <div class="centered-flex">
             <img class="sub-image" src={Pool1}></img>
             <img class="sub-image" src={WaterTank}></img>
+            <img class="sub-image mobile-only" src={Truck2}></img>
         </div>
         
     </div>

@@ -7,7 +7,7 @@ import "./imgslider.css";
 
 const ImgSlider = () => {
   const data = (
-    <div class="slider-container">
+    <div class="slider-container mobile-hide">
       <div class="slider">
         <div class="slides">
           <input type="radio" name="radio-button" id="radio1"></input>

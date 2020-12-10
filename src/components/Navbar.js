@@ -30,7 +30,7 @@ const Navbar = () => {
           </div>
         }
       </div>
-      <nav className="navigation">
+      <nav className="navigation mobile-nav">
         <ul>
           <div>
             <a href="/" class="link">
