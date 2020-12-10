@@ -1,12 +1,11 @@
 import React from 'react';
-import ContactForm from './ContactForm';
+import OrderForm from './OrderForm';
 import Footer from './Footer';
 
 const Home = () => {
     return (
     <div className="App">
-        <ContactForm />
-        <Footer />
+        <OrderForm />
     </div>
     );
 }
