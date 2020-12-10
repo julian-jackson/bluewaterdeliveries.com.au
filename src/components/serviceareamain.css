@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    .mobile-mode {
+        max-width: 300px;
+    }
+}
+
+.centered-flex {
+    display: flex;
+    justify-content: center;
+}

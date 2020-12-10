@@ -1,5 +1,6 @@
 import React from "react";
-import "./form.css";
+import "./serviceareamain.css";
+import SunshineMap from "./../img/map.png";
 
 // Required Info:
 
@@ -16,7 +17,10 @@ const Content = () => {
     <div class="bubble">
         <div>
             <h1>Service Area</h1>
-            <p>We service the enterity of the Sunshine Coast as seen in the map below.</p>
+            <p>We service the enterity of the Sunshine Coast as seen in the map below:</p>
+            <div class="centered-flex">
+              <img class="main-image mobile-mode" src={SunshineMap}></img>
+            </div>
 
         </div>
     </div>
