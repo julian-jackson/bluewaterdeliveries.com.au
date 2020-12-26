@@ -12,7 +12,6 @@ const Navbar = () => {
       setScrolled(false);
     }
   };
-
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   });

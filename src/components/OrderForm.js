@@ -1,23 +1,27 @@
 import React from "react";
+import emailjs from "emailjs-com"
 import "./form.css";
 
-// Required Info:
+export default function ContactUs() {
 
-// Name
-// Email
-// Telephone
-// Address and Postcode
-// Order Size 7000, 10000, 15000
-// Instructios
-// Call me to arrange delivery (Tick box)
+  function sendEmail(e) {
+    e.preventDefault();
 
-const Content = () => {
-  const form = (
-    <div class="bubble">
+    emailjs.sendForm('service_k9s04e6', 'template_w7lt6in', e.target, 'user_gsAkzJBO0TuMoax59sHJH')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
+
+  return (
+    <main className="content">
+       <div class="bubble">
       <div class="form-container centered-flex">
         <div>
         <p class="page-header">Water Order (Currently Unavaliable)</p>
-        <form action="/waterOrder.php">
+        <form action={sendEmail}>
           <label>Name</label>
           <input type="text" id="name" name="name" placeholder="Your name" />
           <label>Email</label>
@@ -64,8 +68,6 @@ const Content = () => {
           </div>
       </div>
     </div>
-  );
-  return <main className="content">{form}</main>;
-};
-
-export default Content;
+    </main>
+  )
+}
